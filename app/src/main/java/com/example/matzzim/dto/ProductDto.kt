@@ -20,7 +20,7 @@ data class ProductDto (
     ,var endLine: LocalDateTime? = null
     ,var endTime: LocalDateTime? = null
     ,var isMaxPrice : Int = 0
-    ,var bidPirce : Int = 0
+    ,var bidPrice : Int = 0
 ) {
 
 }

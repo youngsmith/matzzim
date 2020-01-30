@@ -35,15 +35,9 @@ class HttpHelper {
                         mapper.registerKotlinModule()
                         mapper.registerModule(JavaTimeModule())
 
-                        val d = mapper.readValue(data, ProductDtoList::class.java)
+                        val d : ProductDtoList = mapper.readValue(data, ProductDtoList::class.java)
                         println(d)
-
-
-//                        for (i in 0 until list.length()) {
-//                            val obj = list.getJSONObject(i)
-//                            val title = obj.getString("name")
-//                            println(title)
-//                        }
+                        println(d.productList.size)
                     }
                 }
             }
